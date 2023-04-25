@@ -30,6 +30,6 @@ class Channel:
                             channel_list.append(channel)
                 with open(CHANNEL_INFO, 'w', encoding='utf-8') as f:
                     json.dump(channel_list, f, ensure_ascii=False)
-        print(channel)
+        print(json.dumps(channel, indent=2, ensure_ascii=False))
 
 
