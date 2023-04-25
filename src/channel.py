@@ -29,7 +29,7 @@ class Channel:
                         else:
                             channel_list.append(channel)
                 with open(CHANNEL_INFO, 'w', encoding='utf-8') as f:
-                    json.dump(channel_list, f, ensure_ascii=False)
+                    json.dump(channel_list, f, ensure_ascii=False, indent=2)
         print(json.dumps(channel, indent=2, ensure_ascii=False))
 
 
